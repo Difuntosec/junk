@@ -28,6 +28,10 @@ var age;
 // - thread safety
 // - reduce human mistakes
 
+// Note!
+// Immutable data types: primetitive, frozen objects (i.e. object.freeze())
+// Mutable data types: all objects by default are mutable in JS
+
 // 4. Variable types
 // primitive, single item: number, string, boolean, null, undefiedn, symbol
 // object, box container
