@@ -111,7 +111,7 @@ const simpleMultiply = (a, b) => {
 function calculate(command, a, b) {
   switch (command) {
     case "add":
-      add(a, b);
+      return a + b;
       break;
     case substract:
       substract(a, b);
