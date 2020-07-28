@@ -1,0 +1,107 @@
+:root {
+  /* Color */
+  --white-color: #fff;
+  --black-color: #140a00;
+  --bg-color: #37474f;
+  --blue-color: #0d47a1;
+  --yellow-color: #ffb300;
+  --pink-color: #c51162;
+
+  /* Font size */
+  --font-large: 20px;
+  --font-medium: 18px;
+  --font-small: 12px;
+  --font-micro: 10px;
+
+  /* Size */
+  --button-size: 60px;
+
+  /* Padding */
+  --size-padding: 12px;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.logo {
+  cursor: pointer;
+  transition: transform 300ms ease;
+}
+
+.main .main-button {
+  display: flex;
+  align-items: center;
+}
+
+.main .main-button button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: transform 300ms ease;
+  margin-right: var(--size-padding);
+}
+
+.main .main-button button:hover,
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.main .main-button .imgbtn {
+  height: var(--button-size);
+  width: var(--button-size);
+}
+
+.main .main-button .blue {
+  font-size: var(--font-medium);
+  background-color: var(--blue-color);
+  padding: var(--size-padding);
+  border-radius: 4px;
+}
+
+.main .main-button .yellow {
+  font-size: var(--font-medium);
+  background-color: var(--yellow-color);
+  padding: var(--size-padding);
+  border-radius: 4px;
+}
+
+.main .main-button .pink {
+  font-size: var(--font-medium);
+  background-color: var(--pink-color);
+  padding: var(--size-padding);
+  border-radius: 4px;
+}
+
+.main .main-items {
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.main .main-items .item {
+  background-color: var(--white-color);
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--size-padding);
+}
+
+.main .main-items .item img {
+  width: 50px;
+  height: 50px;
+  padding: var(--size-padding);
+}
+
+.main .main-items .item .name {
+  font-size: var(--font-medium);
+}
